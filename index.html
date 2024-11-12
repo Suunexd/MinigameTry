@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Joculet</title>
+    <style>
+        body {
+            background-color: rgb(5, 5, 68);
+        }
+        .box {
+            width: 150px; 
+            height: 20px; 
+            background-color: firebrick;
+            position: absolute;
+            top: 600px;
+            left: 650px;
+        }
+        .lefthit {
+            width: 20px; 
+            height: 100%; 
+            background-color: goldenrod;
+            position: absolute;
+            top: 0%;
+            left: 300px;
+        }
+        .righthit {
+            width: 20px; 
+            height: 100%; 
+            background-color: goldenrod;
+            position: absolute;
+            top: 0%;
+            left: 1150px;
+        }
+        .up {
+            width: 100%; 
+            height: 5px; 
+            background-color: white;
+            position: absolute;
+            top: 0%;
+            left: 0px;
+            visibility: hidden;
+        }
+        .down {
+            width: 100%;
+            height: 5px; 
+            background-color: white;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            visibility: hidden;
+        }
+        .circle {
+            width: 35px;
+            height: 35px;
+            background-color: antiquewhite;
+            border-radius: 50%;
+            position: absolute;
+            top: 500px;
+            left: 705px;
+        }
+        .img {
+            position: absolute;
+            top: 0px;
+            left: 300px;
+            width: 850px;
+            height: 695px;
+            user-select: none;
+            pointer-events: none;
+            -webkit-user-drag: none;
+        }
+    </style>
+</head>
+<body>
+    <img class="img" src="creative-8-bit-art-hu1u9vwicbqjlt6f.webp" alt="bg">
+    <div class="up"></div>
+    <div class="down"></div>
+    <div class="lefthit"></div>
+    <div class="righthit"></div>
+    <div class="box"></div>
+    <div class="circle"></div>
+    <script src="index.js"></script>
+</body>
+</html>
